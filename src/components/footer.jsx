@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer id="contact" className="border-t border-line bg-white">
-      <div className="mx-auto grid max-w-[1100px] gap-8 px-6 py-12 md:grid-cols-[2fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-[1100px] gap-8 px-4 py-12 sm:grid-cols-2 sm:px-6 md:grid-cols-[2fr_1fr_1fr]">
         <div>
           <p className="text-lg font-bold">
             Brew<span className="text-ember">Haus</span>

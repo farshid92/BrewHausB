@@ -7,7 +7,7 @@ export function ProductCard({ product }) {
       <img
         src={product.image}
         alt={product.name}
-        className="h-[180px] w-full object-cover"
+        className="aspect-4/3 w-full object-cover sm:aspect-auto sm:h-[180px]"
       />
       <div className="p-4">
         <h3 className="font-semibold">{product.name}</h3>

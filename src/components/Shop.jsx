@@ -7,10 +7,10 @@ export function Shop() {
   const filtered =
     filter === 'All' ? products : products.filter((p) => p.category === filter)
   return (
-    <section id="shop" className="mx-auto max-w-[1100px] px-6 py-12">
-      <div className="mb-6 flex items-center justify-between">
+    <section id="shop" className="mx-auto max-w-[1100px] px-4 py-12 sm:px-6">
+      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <h2 className="text-2xl font-bold">This week's picks</h2>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -26,7 +26,7 @@ export function Shop() {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {filtered.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
